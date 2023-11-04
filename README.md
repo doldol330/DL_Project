@@ -1,2 +1,2 @@
 # DL_Project
-2023_2 딥러닝 프로젝트
+2023_2 Deep Learning project
