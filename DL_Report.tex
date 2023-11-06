@@ -1,0 +1,85 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{MuseGAN-based A Cappella Arrangement Model\\
+}
+
+\author{\IEEEauthorblockN{Yewon Cho}
+\IEEEauthorblockA{\textit{dept. Korea University} \\
+Seoul, South Korea \\
+yewon330@korea.ac.kr}
+}
+
+\maketitle
+
+\begin{abstract}
+
+\end{abstract}
+
+\begin{IEEEkeywords}
+
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+
+\section{Plan and Structure}
+\subsection{Project Plan}
+2023-10-29: Review of prior research and selection of
+pre-trained models.\\
+2023-11-05: Data collection and preprocessing.\\
+2023-11-12: Writing of training code and execution of
+toy test.\\
+2023-11-19: Model training and review of modifications.\\
+2023-11-26: Hyperparameter tuning and additional
+training.\\
+2023-12-03: Analysis and report writing.
+
+\subsection{Research Methoology}
+In this project, I have chosen MuseGAN due to its specialization in multi-track music generation and its capacity to consider the harmony between different parts, which is crucial for a capella arrangements. Unlike typical applications of MuseGAN where random noise is used to generate music, our objective is to create individual tracks for each vocal part corresponding to a given melody line. To achieve this, we have adapted MuseGAN into a Conditional Generative Adversarial Network (Conditional GAN). This modification allows the model to generate harmonized vocal parts that are not only musically coherent but also complementary to the provided melody line.
+
+This approach ensures that the generated acapella arrangement maintains both the individual quality of each vocal part and the overall harmonic balance, which is essential in a capella music. By conditioning the MuseGAN on a specific melody line, we aim to leverage the model's inherent strengths in understanding and generating complex musical structures, while guiding its creative process to align with the given melodic input.
+
+
+
+\section{Progress Updates}
+\subsection{Regular Updates}\label{AA}
+2023-11-05 : In the initial phase of my project, I conducted extensive research on models such as MuseGAN and Google Magenta, focusing on their capabilities in music generation. Additionally, I explored various datasets suitable for my objective. My goal is to develop a model capable of generating scores for five distinct vocal parts based on a given melody line. However, I encountered a significant challenge in sourcing a dataset that categorizes both the melody and the complete score for all parts. This has led me to deliberate over potential approaches for training my model, considering the available data and the specific requirements of my project.
+
+2023-11-06 : I devised a solution to the data challenge by focusing on the harmonic interplay of each vocal part in acapella music. The approach involves dividing choral MIDI files into individual parts for each vocal section. These individual parts are then used as inputs, while the target output is set as the complete MIDI file. By employing Conditional Generative Adversarial Networks (CGAN) for training, the model is taught to understand and recreate the harmonious blend of all vocal parts in each measure. If successfully trained, the model will be capable of generating a complete score with appropriate harmonization for each section.
+
+
+
+\subsection{Results and Experiments}
+\begin{itemize}
+\item 
+\item 
+\item 
+\item 
+\end{itemize}
+
+=
+
+\section{Conclusion and Evaluation}
+\subsection{Project Evaluation}
+
+\subsection{Learnings and Insights}
+
+
+
+\begin{thebibliography}{00}
+\bibitem{b1} 
+
+\end{thebibliography}
+
+\end{document}
